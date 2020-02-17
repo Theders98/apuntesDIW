@@ -1,0 +1,10 @@
+.process {
+    background-color: $black;
+    padding:.6rem;
+
+    &__text {
+        color: $grey;
+        font-weight: lighter;
+        padding: .1rem;
+    }
+}

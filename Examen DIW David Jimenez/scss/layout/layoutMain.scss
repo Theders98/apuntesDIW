@@ -1,0 +1,23 @@
+
+.layoutMain{
+    display:grid;
+    grid-template-areas:
+    'menuVertical main-Content main-Content main-Content';
+
+
+}
+.main-Content{
+    grid-area: main-Content;
+
+    padding:20%;
+}
+.menu-Vertical{
+
+    grid-area: menuVertical;
+    padding:20%;
+   
+    
+}
+
+
+

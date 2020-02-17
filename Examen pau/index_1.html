@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag'n Drop</title>
+</head>
+<style>
+    body{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .flights{
+        padding: 20px;
+        border: 1px solid black;
+        margin: 10px;
+    }
+    #plane,#arrival,#departure,#trash{
+        font-size: 36px;
+        
+    }
+    
+</style>
+<body>
+
+    <div class="flights" ondragover="allowDrop(event,'depart')" ondrop="drop(event)" id="depart" draggable="true" ondragstart="drag(event)">Numero de despeguess = <span id="deps">0</span></div>
+    <div class="flights" ondragover="allowDrop(event,'arriv')" ondrop="drop(event)" id="arriv" draggable="true" ondragstart="drag(event)">Numero de aterizajes = <span id="arrvs">0</span></div>
+    <div class="icons">
+        <i class="fas fa-plane-departure" id="departure" draggable="true" ondragstart="drag(event)"></i>
+        <i class="fas fa-plane-arrival" id="arrival" draggable="true" ondragstart="drag(event)"></i>
+        <i class="fas fa-trash" ondragover="allowDrop(event,'trash')" ondrop="drop(event)" id="trash"></i>
+        <!-- <i class="fas fa-plane" id="plane" draggable="true" ondragstart="drag(event)"></i> -->
+    </div>
+    
+</body>
+</html>

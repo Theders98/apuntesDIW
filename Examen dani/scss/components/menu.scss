@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1.3rem 0;
+    margin-left: 1rem;
+    font-size: .9rem;
+
+    &__link {
+        background-color: $white;
+        border: solid 1px $dark;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        margin-right: 1rem;
+        font-weight: bold;
+        color: $dark;
+        cursor: pointer;
+
+        &--right {
+            border-color: transparent;
+            background-color: $blue-light;
+            margin-left: auto;
+            color: $grey;
+
+            &:hover {
+                background-color: $blue-dark;
+            }
+        }
+    }
+}

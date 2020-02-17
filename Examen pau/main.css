@@ -1,0 +1,18 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.movement{
+  position: relative;
+  background: red;
+  animation-name: ex ;
+  animation-duration: 4s;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+}
+@keyframes ex {
+  0% {width: 100px;}
+  100% {width: 100%;}
+}

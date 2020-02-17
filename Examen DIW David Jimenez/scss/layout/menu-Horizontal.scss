@@ -1,0 +1,25 @@
+.menu-Horizontal{
+    display:grid;
+    grid-template-areas: 'boton_izquierda boton_derecha';
+
+    &--izquierda{
+        grid-area: boton_izquierda;
+        margin-top:10%;
+
+  
+    }
+    &__item--derecha{
+        grid-area: boton_derecha;
+
+    }
+    &__item{
+        padding:2%;
+        margin:2%;
+        &--derecha{
+            padding:2%;
+            margin:2%; 
+            margin:auto;
+        }
+    }
+    
+}

@@ -1,0 +1,73 @@
+@mixin button-onPressed($color, $background-color,$border-color, $radio, $padding){
+
+    color:$color;
+    background-color: $background-color;
+    border:2px solid $border-color;
+    border-radius:$radio;
+    padding:$padding;
+
+}
+@mixin button-offPressed($color, $background-color,$border-color, $radio, $padding){
+
+    color:$color;
+    background-color: $background-color;
+    border:2px solid $border-color;
+    border-radius:$radio;
+    padding:$padding;
+
+}
+.paneles{
+
+    meter{
+        width:100%;
+    }
+
+    &__panel{
+        background-color:white;
+        
+    }
+    &__procesos{
+        
+        & h1{
+            font-size:30px;
+        }
+        & p{
+            background-color: black;
+            color:white;
+            padding:20%;
+            text-align:justify;
+        }
+    }
+    &__cpu{
+
+        display:flex;
+        flex-direction:column;
+
+        & p{
+            font-size: 30px;
+        }
+    }
+    &__memoria{
+
+        display:flex;
+        flex-direction:column;
+
+        & p{
+            font-size: 30px;
+        }
+    }
+    &__antivirus{
+    display:flex;
+    flex-direction:row;
+    }
+}
+.switch--on{
+    @include button-onPressed(green, white,green, 1px, 10px);
+    border-radius: 23px 0px 0px 23px;
+}
+
+.switch--off{
+    border-radius: 0px 23px 23px 0px;
+    @include button-offPressed(grey, green,grey, 1px, 10px)
+}
+

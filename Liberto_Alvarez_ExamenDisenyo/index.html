@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monitor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/font-awesome/css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="l-columns">
+            <div class="menu menu-horizontal">
+                <div class="menu__content">
+                    <li class="nav">
+                        <ul class="nav__element"><button class="boton">Usuarios</button></ul>
+                        <ul class="nav__element"><button class="boton">Grupos</button></ul>
+                        <ul class="nav__element"><button class="boton">Permisos</button></ul>
+                        <ul class="nav__element nav__element-last"><button class="boton boton--right">Entrar</button>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            <div class="menu menu-lateral">
+                <div class="menu__content">
+                    <h3 class="title content-title"><i class="fa fa-desktop"></i>&nbsp;Monitor&nbsp;&nbsp;</h3>
+                    <li class="nav nav--vertical">
+                        <ul class="nav__element"><i class="fa fa-microchip"></i>&nbsp;Memoria</ul>
+                        <ul class="nav__element"><i class="fa fa-microchip"></i>&nbsp;CPU</ul>
+                        <ul class="nav__element"><i class="fa fa-database"></i>&nbsp;Red</ul>
+                        <ul class="nav__element"><i class="fa fa-database"></i>&nbsp;Base de datos</ul>
+                    </li>
+                </div>
+            </div>
+
+
+
+            <div class="panel panel-process">
+                <h3 class="title panel__title">Procesos</h3>
+                <div class="panel__content">
+                    <div class="process">
+                        <p class="process__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            <br>
+                            Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a
+                            galley
+                            of type
+                            and
+                            scrambled it to make a type specimen book.<br> It has survived not only five centuries, but
+                            also
+                            the
+                            leap
+                            into electronic typesetting,<br> remaining essentially unchanged.<br> It was popularised in
+                            the
+                            1960s
+                            with the
+                            release of Letraset sheets containing Lorem Ipsum passages,<br> and more recently with
+                            desktop
+                            publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a
+                            galley
+                            of type
+                            and
+                            scrambled it to make a type specimen book.<br> It has survived not only five centuries, but
+                            also
+                            the
+                            leap
+                            into electronic typesetting,<br> remaining essentially unchanged.<br> It was popularised in
+                            the
+                            1960s
+                            with the
+                            release of Letraset sheets containing Lorem Ipsum passages,<br> and more recently with
+                            desktop
+                            publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-cpu">
+                <h3 class="title panel__title">CPU: 80%</h3>
+                <div class="panel__content">
+                    <meter class="panel-bar" min="0" max="100" low="70" high="20" optimum="50" value="80"></meter>
+                </div>
+            </div>
+            <div class="panel panel-memoria">
+                <h3 class="title panel__title">Memoria: 60%</h3>
+                <div class="panel__content">
+                    <meter class="panel-bar" min="0" max="100" low="90" high="90" optimum="90" value="60"></meter>
+                </div>
+            </div>
+            <div class="panel panel-switch">
+                <div class="panel__content">
+                    <div class="l-switches">
+                        <div class="switch">
+                            <h3 class="switch__name">Antivirus:&nbsp;</h3>
+                            <div class="switch__content">
+                                <div class="switch-left switch-left--on">
+                                    <p>OFF</p>
+                                </div>
+                                <div class="switch-right switch-right--on">
+                                    <p>ON</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch">
+                            <h3 class="switch__name">Cortafuegos:&nbsp;</h3>
+                            <div class="switch__content">
+                                <div class="switch-left switch-left--on">
+                                    <p>OFF</p>
+                                </div>
+                                <div class="switch-right switch-right--on">
+                                    <p>ON</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="switch">
+                            <h3 class="switch__name">SELinux:&nbsp;</h3>
+                            <div class="switch__content">
+                                <div class="switch-left switch-left--off">
+                                    <p>OFF</p>
+                                </div>
+                                <div class="switch-right switch-right--off">
+                                    <p>ON</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

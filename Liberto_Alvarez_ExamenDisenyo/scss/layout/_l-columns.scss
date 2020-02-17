@@ -1,0 +1,24 @@
+.l-columns{
+
+    display: grid;
+    grid-template-columns: 0.3fr 0.8fr 0.5fr;
+    grid-template-areas: "menulateral menuvertical menuvertical"
+                         "menulateral proceso cpu"
+                         "menulateral proceso memoria"
+                         "menulateral switch switch";
+}
+
+@media (max-width: 700px) {
+    .l-columns {
+        margin-right: 0px;
+        padding-right: 0px;
+        margin-left: 0.5em;
+      display: grid;
+      grid-template-columns: 0.8fr;
+      grid-template-areas: "menuvertical"
+      "proceso"
+      "cpu"
+      "memoria"
+      "switch";
+    }
+  }

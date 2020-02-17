@@ -1,0 +1,22 @@
+.l-menu {
+    display: grid;
+    grid-template-areas: "l-menu__menu l-menu__content";
+    grid-template-columns: 15.5rem;
+    background-color: $grey;
+
+    @media (max-width: 700px) {
+        grid-template-columns: none;
+    }
+
+    &__menu {
+        grid-area: l-menu__menu;
+
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        grid-area: l-menu__content;
+    }
+}

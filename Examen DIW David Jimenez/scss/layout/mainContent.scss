@@ -1,0 +1,14 @@
+.main-Content{
+    display: flex;
+    flex-direction: column;
+
+}
+.menu-Horizontal{
+    margin-top:-25%;
+    margin-left: -25%;
+    &__item--derecha{
+        margin-left: 85%;
+    }
+}
+
+

@@ -1,0 +1,11 @@
+@mixin progress-color($percentage: 0) {
+    background-color: green;
+
+    @if $percentage >= 50 {
+        background-color: orange;
+    } 
+    
+    @if $percentage >= 80 {
+        background-color: red;
+    } 
+}

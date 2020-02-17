@@ -1,0 +1,43 @@
+.menu {
+    font-family: "Roboto", sans-serif;
+    padding-top: 30px;
+  &-horizontal {
+      margin: 40px;
+      margin-top: 0px;
+    grid-area: menuvertical;
+  }
+  &-lateral {
+    background-color: white;
+    grid-area: menulateral;
+    text-align: justify;
+    padding-left: 50px;
+    margin-bottom: 15%;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--horizontal {
+    list-style-type: none;
+    flex-direction: row;
+  }
+  &--vertical {
+    flex-direction: column;
+  }
+  &__element{
+      font-size: 20px;
+      color: gray;
+      padding-top: 5px;
+  }
+  &__element-last {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 700px) {
+    .menu {
+      display: none;
+    }
+  }

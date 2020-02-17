@@ -1,0 +1,18 @@
+@import "base/_reset.scss";
+
+@import "abstracts/_mixins.scss";
+@import "abstracts/_variables.scss";
+
+
+@import "layout/layoutMain.scss";
+@import "layout/menu-Horizontal.scss";
+@import "layout/menuVertical.scss";
+@import "layout/mainContent.scss";
+@import "layout/paneles.scss";
+
+
+@import "components/componentsMain.scss";
+@import "components/menu-Horizontal.scss";
+@import "components/menuVertical.scss";
+@import "components/mainContent.scss";
+@import "components/paneles.scss";

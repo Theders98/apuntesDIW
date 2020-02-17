@@ -1,0 +1,45 @@
+.panel {
+margin: 40px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  //display: grid;
+  //grid-template-areas: "titulo" "contenido";
+  //grid-template-columns: 1fr;
+  padding: 40px;
+  &__title {
+    grid-area: titulo;
+  }
+  &-process{
+      grid-area: proceso;
+  }
+  &-cpu {
+    grid-area: cpu;
+    
+  }
+  &-memoria {
+    grid-area: memoria;
+  }
+  &-switch{
+      grid-area: switch;
+  }
+  &-bar{
+        width: 100%;
+  }
+}
+
+.title {
+    color: gray;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+    .panel{
+    
+    margin: 10px;
+    padding: 5px;
+    }
+  }
+
+

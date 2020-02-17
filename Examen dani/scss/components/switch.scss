@@ -1,0 +1,47 @@
+.switch {
+    display: flex;
+    align-items: baseline;
+    margin: 1rem;
+
+    &__text {
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    &__button {
+        display: flex;
+        border: 1px solid $dark;
+        border-radius: .5rem;
+        background-color: $light;
+
+        &--on {
+            border: 1px solid $green;
+        }
+
+        &--on &-on {
+            color: $light;
+            padding: .5rem;
+            background: $green;
+            border-radius: 0 .5rem .5rem 0;
+        }
+
+        &--on &-off {
+            padding: .5rem;
+        }
+
+        &--off {
+            border: 1px solid $grey;
+            color: $dark;
+        }
+
+        &--off &-on {
+            padding: .5rem;
+        }
+
+        &--off &-off {
+            padding: .5rem;
+            background: $grey;
+            border-radius: .5rem 0 0 .5rem;
+        }
+    }
+}

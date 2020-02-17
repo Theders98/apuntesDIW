@@ -1,0 +1,20 @@
+.panel {
+    display: grid;
+    grid-template-areas: "panel__title"
+                         "panel__content";
+    border: solid 1px $dark;
+    padding: 2rem;
+    background-color: $light;
+    height: 100%;
+
+    &__title {
+        grid-area: panel__title;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    &__content {
+        grid-area: panel__content;
+    }
+}
