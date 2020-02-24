@@ -1,0 +1,23 @@
+/* CSS Main */
+
+/* Import all css code */
+
+// Base
+@import 'base/reset.scss';
+@import 'base/typography.scss';
+
+// Components
+@import 'components/button.scss';
+@import 'components/client.scss';
+@import 'components/container.scss';
+@import 'components/help.scss';
+@import 'components/menu.scss';
+@import 'components/new.scss';
+@import 'components/news.scss';
+@import 'components/service.scss';
+@import 'components/solution.scss';
+
+// Layouts
+@import 'layout/columns.scss';
+@import 'layout/header.scss';
+@import 'layout/news.scss';

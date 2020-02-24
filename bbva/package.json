@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Inital project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "sh scripts/test.sh",
+    "build": "sh scripts/build.sh",
+    "deploy": "npm run build && sh scripts/deploy.sh",
+    "serve": "onchange src/index.html -- npm run deploy",
+    "sass": "sass --watch src/sass/main.scss src/assets/main.css"
+  },
+  "homepage": "https://github.com/dmarine/inital-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "onchange": "^6.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.22.12"
+  }
+}

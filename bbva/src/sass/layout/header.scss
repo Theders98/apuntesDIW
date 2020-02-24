@@ -1,0 +1,27 @@
+.layout-header {
+    display: grid;
+    grid-template-areas: ". header__menu-top header__access"
+                         "header__image header__menu-bottom header__menu-bottom";
+
+    &__image {
+        grid-area: header__image;
+    }
+
+    &__menu-top {
+        grid-area: header__menu-top;
+        margin: auto 0;
+    }
+
+    &__menu-bottom {
+        grid-area: header__menu-bottom;
+    }
+    
+    &__access {
+        grid-area: header__access;
+        margin: auto;
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}

@@ -1,0 +1,24 @@
+.padding {
+    
+    @for $i from 1 through 30 {
+        &--#{$i} {
+            padding: #{$i}rem;
+        }
+
+        &--#{$i}-vertical {
+            padding: #{$i}rem 0;
+        }
+
+        &--#{$i}-horizontal {
+            padding: 0 #{$i}rem;
+        }
+        
+        &--#{$i}-left {
+            padding-left: #{$i}rem;
+        }
+        
+        &--#{$i}-right {
+            padding-right: #{$i}rem;
+        }
+    }
+}

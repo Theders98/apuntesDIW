@@ -1,0 +1,25 @@
+.solution {
+    background-color: #ffffff;
+    padding: 4.4rem;
+    margin: 3rem 0;
+    width: 34rem;
+
+    &__title {
+        color: #121212;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        padding: 2rem 0 2.3rem;
+    }
+
+    &__link {
+        padding: 1.2rem 6.2rem;
+        background-color: #02a5a5;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+    }
+}

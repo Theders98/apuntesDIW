@@ -1,0 +1,72 @@
+.container {
+    background-color: #e9e9e9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 20rem;
+    display: grid;
+    grid-template-areas: "container__title"
+                         "container__content";
+    
+    &__title {
+        grid-area: container__title;
+        color: #121212;
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 3rem 0 2rem;
+
+        &--dark {
+            color: #ffffff;
+        }
+    }
+
+    &__content {
+        grid-area: container__content;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        padding-bottom: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--light {
+        background-color: #ffffff;
+    }
+
+    &--dark {
+        background-color: #004481;
+    }
+
+    &--darker {
+        background-color: #072146;
+    }
+
+    &--menu {
+        display: flex;
+    }
+
+    @for $i from 0 through 50 {
+        &--padding-#{$i} {
+            padding: #{$i}rem;
+        }
+
+        &--padding-#{$i}-vertical {
+            padding: #{$i}rem 0;
+        }
+
+        &--padding-#{$i}-horizontal {
+            padding: 0 #{$i}rem;
+        }
+
+        &--padding-#{$i}-left {
+            padding-left: #{$i}rem;
+        }
+
+        &--padding-#{$i}-right {
+            padding-right: #{$i}rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 0;
+    }
+}

@@ -1,0 +1,37 @@
+.help {
+    text-align: center;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-areas: "help__circle"
+                         "help__title"
+                         "help__link";
+
+    &__circle {
+        grid-area: help__circle;
+        background-color: #e9e9e9;
+        border-radius: 50%;
+        height: 9rem;
+        width: 9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2.4rem 1.6rem;
+    }
+
+    &__title {
+        grid-area: help__title;
+        color: #121212;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+
+    &__link {
+        grid-area: help__link;
+        color: #1973b8;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,13 @@
+.button {
+    background-color: #02a5a5;
+    padding: 1.1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+
+    &--small {
+        padding: 0.5rem 2rem;
+    }
+}

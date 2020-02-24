@@ -1,0 +1,50 @@
+.service {
+    padding: 6.8rem 10.6rem 5.2rem 3.2rem;
+    background-size: 9rem;
+    background-position: 18rem 6rem;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: "service__title"
+                         "service__text";
+
+    &__image {
+        grid-area: service__image;
+    }
+
+    &__title {
+        grid-area: service__title;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__text {
+        grid-area: service__text;
+        line-height: 1.5rem;
+    }
+
+    &__title, &__text {
+        color: #ffffff;
+    }
+
+    &--darker {
+        background-image: url('https://www.bbva.es/estaticos/mult/160x160_ilustracion-agregador_tcm924-767836.svg');
+        background-color: #072146;
+    }
+
+    &--lighter {
+        background-image: url('https://www.bbva.es/estaticos/mult/valora_tcm924-680227.svg');
+        background-color: #237aba;
+    }
+
+    &--dark {
+        background-image: url('https://www.bbva.es/estaticos/mult/imgTodoMovil_tcm924-680232.png');
+        background-color: #043263;
+    }
+
+    &--light {
+        background-image: url('https://www.bbva.es/estaticos/mult/bconomy_tcm924-680214.svg');
+        background-color: #1464a5;
+    }
+}

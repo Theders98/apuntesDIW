@@ -1,0 +1,30 @@
+.news {
+    display: grid;
+    grid-template-areas: "news__primary news__secondary-up news__secondary-up"
+                         "news__primary news__secondary-down-left news__secondary-down-right";
+
+    &__primary {
+        grid-area: news__primary;
+    }
+
+    &__secondary {
+        grid-area: news__secondary;
+
+        &-up {
+            grid-area: news__secondary-up;
+
+        }
+
+        &-down-left {
+            grid-area: news__secondary-down-left;
+        }
+
+        &-down-right {
+            grid-area: news__secondary-down-right;
+        }
+
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }  
+}

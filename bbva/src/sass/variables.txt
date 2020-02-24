@@ -1,0 +1,10 @@
+menu__link--padding-horizontal-s  12
+menu__link--padding-horizontal-m  15
+menu__link--padding-horizontal-l  30
+
+menu__link--font-size-s
+
+
+menu__link--text-color
+menu__link--text-color-dark
+menu__link--hover-text-color-dark
