@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Inital project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch scss/main.scss assets/css/main.css"
+  },
+  "homepage": "https://github.com/dmarine/inital-project#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "sass": "^1.25.0"
+  }
+}

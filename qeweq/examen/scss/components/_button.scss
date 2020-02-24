@@ -1,0 +1,38 @@
+.button {
+    padding: 1rem 2rem;
+    margin: .3rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: .3rem;
+    width: 14rem;
+
+    background-color: #ffffff;
+    border: 1px solid #41B6E6;
+    color: #41B6E6;
+
+    &--important {
+        background-color: #41B6E6;
+        color: #ffffff;
+
+        @media (max-width: 600px) {
+            &\@mobile {
+                background-color: #41B6E6 !important;
+                color: #ffffff !important;
+            }
+        }
+    }
+
+    &--normal {
+        background-color: #ffffff;
+        border: 1px solid #41B6E6;
+        color: #41B6E6;
+
+        @media (max-width: 600px) {
+            &\@mobile {
+                background-color: #ffffff !important;
+                border: 1px solid #41B6E6 !important;
+                color: #41B6E6 !important;
+            }
+        }
+    }
+}

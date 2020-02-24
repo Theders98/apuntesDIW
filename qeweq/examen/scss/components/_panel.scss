@@ -1,0 +1,33 @@
+.panel {
+    margin: .5rem;
+    padding: 1.5rem 1rem;
+    background-color: #ffffff;
+    width: 35rem;
+    height: min-content;
+
+    &__title {
+        font-size: 2rem;
+        color: #41B6E6;
+        margin-bottom: 1rem;
+    }
+
+    &--padding-xs {
+        padding: 1.5rem 1rem;
+
+        @media (max-width: 600px) {
+            &\@mobile {
+                padding: 1.5rem 1rem !important;
+            }
+        }
+    }
+
+    &--padding-m {
+        padding: 2.5rem 2rem;
+
+        @media (max-width: 600px) {
+            &\@mobile {
+                padding: 2.5rem 2rem !important;
+            }
+        }
+    }
+}

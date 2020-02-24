@@ -1,0 +1,54 @@
+.notice {
+    color: #41B6E6;
+    margin: auto 1rem 0.5rem 0.5rem;
+
+    &__title {
+        font-size: 4rem;
+        font-weight: bold;
+
+        &--size-xl {
+            font-size: 3rem;
+
+            @media (max-width: 600px) {
+                &\@mobile {
+                    font-size: 3rem !important;
+                }
+            }
+        }
+
+        &--size-s {
+            font-size: 2rem;
+
+            @media (max-width: 600px) {
+                &\@mobile {
+                    font-size: 2rem !important;
+                }
+            }
+        }
+
+        &--color-default {
+            color: #41B6E6;
+
+            @media (max-width: 600px) {
+                &\@mobile {
+                    color: #41B6E6 !important;
+                }
+            }
+        }
+
+        &--color-important {
+            color: #000066;
+
+            @media (max-width: 600px) {
+                &\@mobile {
+                    color: #000066 !important;
+                }
+            }
+        }
+    }
+
+    &__description {
+        color: #000066;
+        font-weight: bold;
+    }
+}

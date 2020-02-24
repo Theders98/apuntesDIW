@@ -1,0 +1,7 @@
+.list{
+    list-style-image: url("../check.svg");
+    padding-left: 2rem;
+    &__item{
+        margin: 1rem 0rem;
+    }
+}

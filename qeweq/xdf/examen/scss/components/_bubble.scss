@@ -1,0 +1,20 @@
+.bubble {
+    &__img {
+        display: block;
+        margin: auto;
+        &--animation{
+            
+        animation-duration:2.5s;
+        animation-fill-mode:forwards;
+        animation-name: wave;
+        }
+    }
+
+    &__text {
+        color: rgb(252, 255, 94);
+        position: absolute;
+        right: 49%;
+        top: 15%;
+    }
+    
+}

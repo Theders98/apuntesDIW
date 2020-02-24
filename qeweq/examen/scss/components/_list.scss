@@ -1,0 +1,10 @@
+.list {
+    color: #4A4A4A;
+    padding-left: 1.5rem;
+    list-style-image: url("../images/check.svg");
+    margin: 2rem 0;
+
+    &__item {
+        margin: 1rem .5rem;
+    }
+}

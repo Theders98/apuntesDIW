@@ -1,0 +1,20 @@
+@keyframes wave {
+    0% {
+        transform: translate3d(0, 0, 0) rotateZ(3deg) rotateY(20deg) scaleX(0.98) skew(0deg);
+    }
+    20% {
+        transform: translate3d(0, 0, 0) rotateZ(3deg) rotateY(19deg) scaleY(0.95) skewY(2deg);
+    }
+    40% {
+        transform: translate3d(0, 0, 0) rotateX(2deg) rotateZ(3deg) rotateY(20deg) scaleX(0.97) skew(2deg);
+    }
+    60% {
+        transform: translate3d(0, 0, 0) rotateZ(3deg) rotateY(5deg) scaleY(0.96) scaleX(0.99) skewX(-2deg);
+    }
+    80% {
+        transform: translate3d(0, 0, 0) rotateX(1deg) rotateZ(3deg) rotateY(18deg) skew(-2deg);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) rotateX(0deg) rotateZ(3deg) rotateY(20deg) scaleX(0.98) skew(0deg);
+    }
+}

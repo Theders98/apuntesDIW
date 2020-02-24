@@ -1,0 +1,27 @@
+.l-columns {
+    display:grid;
+    
+    @for $i from 1 through 12 {
+        &--#{$i}-columns {
+            grid-template-columns: repeat($i,1fr);
+        }
+
+        &--#{$i}-columns\@mobile {
+            @media (max-width: 600px) {
+                grid-template-columns: repeat($i,1fr) !important;
+            }
+        }
+
+        &--#{$i}-columns\@tablet {
+            @media (min-width: 600px) and (max-width: 1200px) {
+                grid-template-columns: repeat($i,1fr) !important;
+            }
+        }
+
+        &--#{$i}-columns\@desktop {
+            @media (min-width: 1200px) {
+                grid-template-columns: repeat($i,1fr) !important;
+            }
+        }
+    }
+}

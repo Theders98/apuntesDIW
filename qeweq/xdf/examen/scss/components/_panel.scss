@@ -1,0 +1,31 @@
+.panel{
+    height: min-content;
+    padding: 2rem;
+    margin: 1rem;
+    width: 30rem;
+    background-color: lawngreen;
+    &__header{
+        color: rgb(104, 0, 22);
+        font-size: 30px;
+    }
+    &__content{
+
+    }
+    &__footer{
+        
+    }
+    &--padding-xs{
+        padding: 1rem;
+    }
+    &--padding-xl{
+        padding: 2rem;
+    }
+    @media (max-width: 600px) {
+    &--padding-xs\@mobile{
+        padding: 1rem;
+    }
+    &--padding-xl\@mobile{
+        padding: 2rem;
+    }
+}
+}
